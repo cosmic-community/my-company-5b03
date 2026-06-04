@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+}
+
+.gradient-hero {
+  background: radial-gradient(1200px 600px at 70% -10%, rgba(59, 130, 246, 0.25), transparent 60%),
+    radial-gradient(800px 500px at 10% 10%, rgba(30, 64, 175, 0.18), transparent 55%),
+    linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+}
